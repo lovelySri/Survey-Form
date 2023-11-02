@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <form action="submit_survey.php" method="post">
+        
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+            
+            <label>How did you hear about us?</label>
+            <input type="radio" id="hear-website" name="hear-about" value="Website">
+            <label for="hear-website">Website</label>
+            <input type="radio" id="hear-social" name="hear-about" value="Social Media">
+            <label for="hear-social">Social Media</label>
+            <input type="radio" id="hear-friend" name="hear-about" value="Friend">
+            <label for="hear-friend">Friend</label>
+            
+            <label for="subscribe">Subscribe to our newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="Yes">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
